@@ -7,8 +7,7 @@ def main():
     print('close後', f.closed)
     print(type(f))
 
-
-# withをぬけたら勝手にclose()する
+    # withをぬけたら勝手にclose()する
     with open('users.csv', mode='a') as f:
         f.write('Kazuma, 38')
         print(f.closed)
